@@ -562,6 +562,18 @@ nav.navbar {
 .about .card .card-body {
   padding: 2rem 1.5rem !important;
 }
+
+.breadcrumb-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+  padding-block: 10rem 4rem;
+}
+
+.breadcrumb-icon,
 .about .card .about-icon {
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -577,6 +589,16 @@ nav.navbar {
   align-items: center;
   justify-content: center;
 }
+
+.breadcrumb-icon {
+  background: var(--main);
+}
+
+.breadcrumb-icon i {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.breadcrumb-icon img,
 .about .card .about-icon img {
   object-fit: contain;
 }
@@ -1014,6 +1036,30 @@ nav.navbar {
   font-size: 0.875rem;
   color: var(--main);
 }
+
+.policy-wrapper {
+  display: flex;
+  padding: 2.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: stretch;
+  border-radius: 1.875rem;
+  background: #f7f7f7;
+}
+.policy-wrapper .terms-list ul {
+  list-style: disc;
+  padding-inline-start: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.policy-wrapper .terms-list li {
+  color: #2a2a28;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 /* tablet responsive */
 @media (max-width: 992px) {
   .container-fluid {
